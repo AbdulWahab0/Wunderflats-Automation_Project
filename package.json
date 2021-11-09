@@ -7,11 +7,13 @@
     "start": "npm run cypress",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
     "electronTest": "cypress run --spec cypress/integration/*ProfileTab.feature --headless --browser electron",
+    "chromeTest": "cypress run --spec cypress/integration/*ProfileTab.feature --headless --browser electron",
+    "firefoxTest": "cypress run --spec cypress/integration/*ProfileTab.feature --headless --browser electron",
+    "Test:20Times": "npx cypress-repeat run -n 20 --spec cypress/integration/ProfileTab.feature --headless",
     "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress": "node_modules/.bin/cypress open",
-    "E2E test buy product": "npm run start -- --spec \"cypress/integration/TC001_E2E/*\"",
-    "testp": "jest"
+    "testPalindrome": "jest"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
