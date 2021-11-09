@@ -39,7 +39,7 @@
             "name": "User should be logged in",
             "result": {
               "status": "passed",
-              "duration": 22384000000
+              "duration": 25040000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User clicks on menu button",
             "result": {
               "status": "passed",
-              "duration": 207000000
+              "duration": 295000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User clicks on my account option",
             "result": {
               "status": "passed",
-              "duration": 2955000000
+              "duration": 4991000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "User should be redirected to profile page",
             "result": {
               "status": "passed",
-              "duration": 10066000000
+              "duration": 10053000000
             }
           }
         ]
@@ -89,7 +89,7 @@
             "name": "User remove first or second name or both",
             "result": {
               "status": "passed",
-              "duration": 2099000000
+              "duration": 2078000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "User click on save button",
             "result": {
               "status": "passed",
-              "duration": 168000000
+              "duration": 155000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "User should be able to view  the validation error",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 54000000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "name": "User remove email address",
             "result": {
               "status": "passed",
-              "duration": 582000000
+              "duration": 611000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "User click on email save button",
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 105000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "User should be able to view  the email validation error",
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 26000000
             }
           }
         ]
@@ -169,7 +169,7 @@
             "name": "User remove address",
             "result": {
               "status": "passed",
-              "duration": 1280000000
+              "duration": 1301000000
             }
           },
           {
@@ -179,7 +179,7 @@
             "name": "User click on address save button",
             "result": {
               "status": "passed",
-              "duration": 150000000
+              "duration": 135000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "User should be able to view  the address validation error",
             "result": {
               "status": "passed",
-              "duration": 168000000
+              "duration": 128000000
             }
           }
         ]
@@ -209,7 +209,7 @@
             "name": "User click on Identity verification edit icon",
             "result": {
               "status": "passed",
-              "duration": 428000000
+              "duration": 424000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "User should view Identity verification description",
             "result": {
               "status": "passed",
-              "duration": 88000000
+              "duration": 98000000
             }
           },
           {
@@ -249,7 +249,7 @@
             "name": "User is on the profile page",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 93000000
             }
           },
           {
@@ -259,7 +259,7 @@
             "name": "User click on profile,my documents and settings",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 78000000
             }
           },
           {
@@ -269,7 +269,7 @@
             "name": "User should be able to the all tabs respective page",
             "result": {
               "status": "passed",
-              "duration": 743000000
+              "duration": 950000000
             }
           }
         ]
@@ -289,7 +289,7 @@
             "name": "User click on nationality edit icon",
             "result": {
               "status": "passed",
-              "duration": 564000000
+              "duration": 787000000
             }
           },
           {
@@ -299,7 +299,7 @@
             "name": "User click on select icon for nationality tab",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 145000000
             }
           },
           {
@@ -309,7 +309,7 @@
             "name": "User should be able to view list of countries nationalities",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 29000000
             }
           }
         ]
@@ -329,7 +329,7 @@
             "name": "User is on profile page",
             "result": {
               "status": "passed",
-              "duration": 74000000
+              "duration": 77000000
             }
           },
           {
@@ -339,7 +339,7 @@
             "name": "User make mouseover on the progress ring",
             "result": {
               "status": "passed",
-              "duration": 175000000
+              "duration": 223000000
             }
           },
           {
@@ -349,7 +349,7 @@
             "name": "User should be able to view account the perfectage with description",
             "result": {
               "status": "passed",
-              "duration": 115000000
+              "duration": 60000000
             }
           }
         ]
@@ -369,7 +369,7 @@
             "name": "User is on profile page",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 76000000
             }
           },
           {
@@ -379,7 +379,7 @@
             "name": "User naviagte to profile header",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 20000000
             }
           },
           {
@@ -389,7 +389,7 @@
             "name": "User naviagte to profile footer",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 18000000
             }
           },
           {
@@ -399,7 +399,7 @@
             "name": "User should be able to view header and footer",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 36000000
             }
           }
         ]
@@ -419,7 +419,7 @@
             "name": "User remove phone number",
             "result": {
               "status": "passed",
-              "duration": 493000000
+              "duration": 640000000
             }
           },
           {
@@ -429,7 +429,7 @@
             "name": "User click on phone number save button",
             "result": {
               "status": "passed",
-              "duration": 10164000000
+              "duration": 10163000000
             }
           },
           {
@@ -439,7 +439,7 @@
             "name": "User should be able to view  the phone number validation error",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.InputWrapper-error>' to have text 'Must be a valid phone number', but the text was ''\n    + expected - actual\n\n    +'Must be a valid phone number'\n\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:114:46)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11519:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10851:35)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.InputWrapper-error>' to have text 'Must be a valid phone number', but the text was ''\n    + expected - actual\n\n    +'Must be a valid phone number'\n\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:114:46)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11522:9)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10851:35)"
             }
           }
         ]
