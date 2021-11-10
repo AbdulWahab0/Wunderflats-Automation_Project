@@ -1,22 +1,10 @@
 import ProfileTab from "../../support/pageObjects/ProfileTab";
-import LoginPage from "../../support/pageObjects/LoginPage";
 
 const profileTab = new ProfileTab();
-const loginPage = new LoginPage();
 
+// Login to App
 Given("User should be logged in", (datatable) => {
-  loginPage.navigateToUrl();
-  cy.wait(10000);
-  //loginPage.getSignInbutton().click();
-  //cy.wait(10000);
-
-  loginPage.getEmailInput().type("wahab8567@gmail.com");
-  cy.wait(1000);
-  loginPage.getEmailButton().click();
-  loginPage.getPasswordlInput().type("14FollowUp!");
-  cy.wait(1000);
-  cy.get(".InputWithButton-btnLabel").click();
-  cy.wait(1000);
+  cy.loginToApp();
 });
 
 // Test to verify profile page
@@ -34,16 +22,14 @@ Then("User should be redirected to profile page", () => {
 
 //Test for empty full name
 When("User remove first or second name or both", () => {
-  cy.wait(1000);
-  profileTab.getFirstNameEditIcon().click();
-  profileTab.removeFirstNameForValidation().clear({ force: true });
+  cy.removeFullName();
 });
 
 And("User click on save button", () => {
-  profileTab.getFullNameSaveButton().click({ force: true });
+  cy.getFullNameSaveButton();
 });
 Then("User should be able to view  the validation error", () => {
-  profileTab.getFullNameValidationtText().should("have.text", "Please fill in");
+  cy.getFullNameValidationtText();
 });
 
 //Test for empty Email Address
@@ -79,27 +65,14 @@ Then("User should be able to view  the phone number validation error", () => {
 
 //Test for address
 When("User remove address", () => {
-  profileTab.getAddressEditIcon().click();
-  profileTab.removeAddress().clear({ force: true });
-  profileTab.removezipCode().clear({ force: true });
-  profileTab.removeCity().clear({ force: true });
-  profileTab.removeRegion().clear({ force: true });
+  cy.removeAddress();
 });
 
 And("User click on address save button", () => {
-  profileTab.getAddressSaveButton().click({ force: true });
+  cy.getAddressSaveButton();
 });
 Then("User should be able to view  the address validation error", () => {
-  profileTab
-    .getAddressLineValidationtText()
-    .should("have.text", "Please fill in");
-  profileTab.getZipCodeValidationtText().should("have.text", "Please fill in");
-  profileTab
-    .getAddressCityValidationtText()
-    .should("have.text", "Please fill in");
-  profileTab
-    .getAddressRegionValidationtText()
-    .should("have.text", "Please fill in");
+  cy.getAddressLineValidationtText();
 });
 
 //Test for Identity verification description and Button
@@ -116,22 +89,14 @@ Then("User should be able to view Identity verification button", () => {
 
 //Test for account Header tabs
 When("User is on the profile page", () => {
-  profileTab.getAccountHeader().should("be.visible");
+  cy.getAccountHeader();
 });
 
 And("User click on profile,my documents and settings", () => {
-  //profileTab.getIdentityVerificationDescription().should('be.visible')
-  profileTab.getProfileTab().should("be.visible");
-  profileTab.getDocumentTab().should("be.visible");
-  profileTab.getSettingTab().should("be.visible");
+  cy.getAccountTabs();
 });
-Then("User should be able to the all tabs respective page", () => {
-  profileTab.getProfileTab().click();
-  profileTab.getProfilePage();
-  profileTab.getDocumentTab().click();
-  profileTab.getDocumentsPage();
-  profileTab.getSettingTab().click();
-  profileTab.getSettingPage();
+Then("User should be able to view all tabs respective page", () => {
+  cy.ValidateAllTabs();
 });
 
 //Test for  list of Nationalities country list
@@ -141,10 +106,10 @@ When("User click on nationality edit icon", () => {
 });
 
 And("User click on select icon for nationality tab", () => {
-  cy.get(".DropdownInput-icon").last().click({ force: true });
+  profileTab.getDropDownIcon();
 });
 Then("User should be able to view list of countries nationalities", () => {
-  cy.get(".DropdownInput-select").should("be.visible");
+  profileTab.getNationalityList();
 });
 
 //Test for profile progress ring
@@ -153,15 +118,12 @@ When("User is on profile page", () => {
 });
 
 And("User make mouseover on the progress ring", () => {
-  profileTab.getStatusRingMouseover();
+  cy.getStatusRingMouseover();
 });
 Then(
   "User should be able to view account the perfectage with description",
   () => {
-    profileTab.getStatusRingToolTip();
-    profileTab.getStatusRingToolTipHeading();
-    profileTab.getStatusRingDescription();
-    profileTab.getTextForProgressRing();
+    cy.getStatusRing();
   }
 );
 
@@ -179,4 +141,16 @@ And("User naviagte to profile footer", () => {
 Then("User should be able to view header and footer", () => {
   cy.get(".AppHeader-container").should("be.visible");
   cy.get(".Footer").should("be.visible");
+});
+
+//Test for all fields
+When("User is on profile page", () => {
+  cy.NaviagteToProfilePage();
+});
+
+And("User naviagate first name", () => {
+  cy.NaviagteToAllFileds();
+});
+Then("User should be able to view all fields", () => {
+  cy.getViewOfAllFields();
 });

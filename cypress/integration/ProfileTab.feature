@@ -11,7 +11,6 @@ Feature: Profile page feature
         Then User should be redirected to profile page
 
 
-
     Scenario: Verify the user is able to view validation error if  the first name is null
         When User remove first or second name or both
         And User click on save button
@@ -35,7 +34,7 @@ Feature: Profile page feature
     Scenario: Verify the user is able to view account Header tabs
         When User is on the profile page
         And User click on profile,my documents and settings
-        Then User should be able to the all tabs respective page
+        Then User should be able to view all tabs respective page
 
     Scenario: Verify the user is able to list of countries for nationality
         When User click on nationality edit icon
@@ -53,10 +52,12 @@ Feature: Profile page feature
         And  User naviagte to profile footer
         Then User should be able to view header and footer
 
-    Scenario: Verify the user is able to view validation error if  the phone number is null
-        When User remove phone number
-        And User click on phone number save button
-        Then User should be able to view  the phone number validation error
+    Scenario: Verify the user is able to view all fields  in the profile page 
+        When User is on profile page
+        And  User naviagate first name 
+        Then User should be able to view all fields
+
+
 
 
 

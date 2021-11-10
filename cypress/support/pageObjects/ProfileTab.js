@@ -196,8 +196,12 @@ class ProfileTab {
       "[data-testid=NationalitySection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]"
     );
   }
+
   getDropDownIcon() {
-    return cy.get("[data-testid=DropdownInput-nationality]");
+    return cy.get(".DropdownInput-icon").last().click({ force: true });
+  }
+  getNationalityList() {
+    return cy.get(".DropdownInput-select").should("be.visible");
   }
   // Status Ring
   getTextForProgressRing() {
@@ -216,10 +220,33 @@ class ProfileTab {
   }
   getStatusRingToolTipHeading() {
     return cy.get(".Avatar-tooltipHeading").should("be.visible");
-  }
+  }FullNameSection
 
   getStatusRingDescription() {
     return cy.get(".Avatar-tooltipHeading").should("be.visible");
+  }
+  
+  // Valide all fileds in the profile page 
+  getFullNameSection() {
+    return cy.get('[data-testid=FullNameSection] > .EditableContentContainer-text > .EditableContentContainer-text-label').should("have.text", "Full name");
+  }
+  getEmailSection() {
+    return  cy.get('[data-testid=EmailSection] > .EditableContentContainer-text > .EditableContentContainer-text-label').should("have.text", "Email");
+  }
+  getPhoneNumberSection() {
+    return  cy.get('[data-testid=PhoneNumberSection] > .EditableContentContainer-text > .EditableContentContainer-text-label').should("have.text", "Phone");
+  } 
+  getAddressSection() {
+    return  cy.get('[data-testid=AddressSection] > .EditableContentContainer-text > .EditableContentContainer-text-label').should("have.text", "Address");
+  }
+  getIdVerificationSection() {
+    return  cy.get('[data-testid=IdVerificationSection] > .EditableContentContainer-text > .EditableContentContainer-text-label').should("have.text", "Identity verification");
+  }
+  getBirthDateSection() {
+    return  cy.get('[data-testid=BirthDateSection] > .EditableContentContainer-text > .EditableContentContainer-text-label').should("have.text", "Birth date");
+  }
+  getNationalitySection() {
+    return  cy.get('.NationalityForm-FieldsContainer-nationality > .InputWrapper > .InputWrapper-label-container > .InputWrapper-label').should("have.text", "Nationality");
   }
 }
 
