@@ -39,7 +39,7 @@
             "name": "User should be logged in",
             "result": {
               "status": "passed",
-              "duration": 18578000000
+              "duration": 17805000000
             }
           },
           {
@@ -49,7 +49,7 @@
             "name": "User clicks on menu button",
             "result": {
               "status": "passed",
-              "duration": 135000000
+              "duration": 146000000
             }
           },
           {
@@ -59,7 +59,7 @@
             "name": "User clicks on my account option",
             "result": {
               "status": "passed",
-              "duration": 1034000000
+              "duration": 2307000000
             }
           },
           {
@@ -69,7 +69,7 @@
             "name": "User should be redirected to profile page",
             "result": {
               "status": "passed",
-              "duration": 10073000000
+              "duration": 10033000000
             }
           }
         ]
@@ -89,7 +89,7 @@
             "name": "User remove first or second name or both",
             "result": {
               "status": "passed",
-              "duration": 1450000000
+              "duration": 1564000000
             }
           },
           {
@@ -99,7 +99,7 @@
             "name": "User click on save button",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 98000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "User should be able to view  the validation error",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 20000000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "name": "User remove email address",
             "result": {
               "status": "passed",
-              "duration": 257000000
+              "duration": 283000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "User click on email save button",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 80000000
             }
           },
           {
@@ -149,7 +149,7 @@
             "name": "User should be able to view  the email validation error",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 14000000
             }
           }
         ]
@@ -169,7 +169,7 @@
             "name": "User remove address",
             "result": {
               "status": "passed",
-              "duration": 766000000
+              "duration": 838000000
             }
           },
           {
@@ -179,7 +179,7 @@
             "name": "User click on address save button",
             "result": {
               "status": "passed",
-              "duration": 71000000
+              "duration": 92000000
             }
           },
           {
@@ -189,7 +189,7 @@
             "name": "User should be able to view  the address validation error",
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 43000000
             }
           }
         ]
@@ -209,7 +209,7 @@
             "name": "User click on Identity verification edit icon",
             "result": {
               "status": "passed",
-              "duration": 143000000
+              "duration": 175000000
             }
           },
           {
@@ -219,7 +219,7 @@
             "name": "User should view Identity verification description",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 11000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "name": "User should be able to view Identity verification button",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           }
         ]
@@ -249,7 +249,7 @@
             "name": "User is on the profile page",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 30000000
             }
           },
           {
@@ -259,7 +259,7 @@
             "name": "User click on profile,my documents and settings",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 23000000
             }
           },
           {
@@ -269,7 +269,7 @@
             "name": "User should be able to view all tabs respective page",
             "result": {
               "status": "passed",
-              "duration": 516000000
+              "duration": 472000000
             }
           }
         ]
@@ -289,7 +289,7 @@
             "name": "User click on nationality edit icon",
             "result": {
               "status": "passed",
-              "duration": 335000000
+              "duration": 279000000
             }
           },
           {
@@ -299,7 +299,7 @@
             "name": "User click on select icon for nationality tab",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 89000000
             }
           },
           {
@@ -309,7 +309,7 @@
             "name": "User should be able to view list of countries nationalities",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 18000000
             }
           }
         ]
@@ -329,7 +329,7 @@
             "name": "User is on profile page",
             "result": {
               "status": "passed",
-              "duration": 35000000
+              "duration": 111000000
             }
           },
           {
@@ -339,7 +339,7 @@
             "name": "User make mouseover on the progress ring",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 96000000
             }
           },
           {
@@ -349,7 +349,7 @@
             "name": "User should be able to view account the perfectage with description",
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 36000000
             }
           }
         ]
@@ -369,7 +369,7 @@
             "name": "User is on profile page",
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 45000000
             }
           },
           {
@@ -379,7 +379,7 @@
             "name": "User naviagte to profile header",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 18000000
             }
           },
           {
@@ -389,7 +389,7 @@
             "name": "User naviagte to profile footer",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 17000000
             }
           },
           {
@@ -399,7 +399,7 @@
             "name": "User should be able to view header and footer",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 16000000
             }
           }
         ]
@@ -419,7 +419,7 @@
             "name": "User is on profile page",
             "result": {
               "status": "passed",
-              "duration": 45000000
+              "duration": 30000000
             }
           },
           {
@@ -429,7 +429,7 @@
             "name": "User naviagate first name",
             "result": {
               "status": "passed",
-              "duration": 59000000
+              "duration": 56000000
             }
           },
           {
@@ -439,7 +439,47 @@
             "name": "User should be able to view all fields",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 92000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile-page-feature;verify-address-api-implementation",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "Verify address API implementation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "User is on profile page for google",
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "User type any address in address field",
+            "result": {
+              "status": "passed",
+              "duration": 339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "User should be able to view google api adress suggestion",
+            "result": {
+              "status": "passed",
+              "duration": 1248000000
             }
           }
         ]

@@ -98,3 +98,27 @@ Cypress.Commands.add("ValidateAllTabs", () => {
   profileTab.getSettingTab().click();
   profileTab.getSettingPage();
 });
+
+//Commands for Google address api addrees
+Cypress.Commands.add("removeExistingAddress", () => {
+  profileTab.getAddressEditIcon().click();
+  /* cy.get('.InputAutocomplete > .InputText > .InputText-input')
+      .invoke("text")
+      .then((address) => {
+        const address_value = address;
+        cy.log('wahab',address_value);
+        expect(address_value).to.equal("Europaplatz 1");
+      }); */
+  //cy.get('#\33 8val-results > :nth-child(1)').click();
+});
+
+Cypress.Commands.add("UpdateAddress", () => {
+  profileTab.removeAddress().clear({ force: true });
+  profileTab.updateAddressForGoogleApi();
+});
+
+Cypress.Commands.add("ValidateGoogleApiAddress", () => {
+  cy.wait(1000);
+  cy.get('.InputAutocomplete-suggestionItem').first().click({ multiple: true });
+  cy.get('input[name="addressLine1"]').should('have.value', 'Europaplatz 1');
+});

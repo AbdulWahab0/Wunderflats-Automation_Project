@@ -248,6 +248,12 @@ class ProfileTab {
   getNationalitySection() {
     return  cy.get('.NationalityForm-FieldsContainer-nationality > .InputWrapper > .InputWrapper-label-container > .InputWrapper-label').should("have.text", "Nationality");
   }
+
+  // Test For Google Api 
+
+  updateAddressForGoogleApi() {
+    return cy.get('.InputAutocomplete > .InputText > .InputText-input').type("berlin");
+  }
 }
 
 export default ProfileTab;

@@ -57,6 +57,11 @@ Feature: Profile page feature
         And  User naviagate first name 
         Then User should be able to view all fields
 
+        Scenario: Verify address API implementation  
+        When User is on profile page for google
+        And  User type any address in address field
+        Then User should be able to view google api adress suggestion 
+
 
 
 

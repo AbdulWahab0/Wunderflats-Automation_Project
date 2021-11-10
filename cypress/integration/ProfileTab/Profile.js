@@ -154,3 +154,15 @@ And("User naviagate first name", () => {
 Then("User should be able to view all fields", () => {
   cy.getViewOfAllFields();
 });
+
+//Test for Google address Api
+When("User is on profile page for google", () => {
+  cy.removeExistingAddress();
+});
+
+And("User type any address in address field", () => {
+  cy.UpdateAddress();
+});
+Then("User should be able to view google api adress suggestion", () => {
+  cy.ValidateGoogleApiAddress();
+});
