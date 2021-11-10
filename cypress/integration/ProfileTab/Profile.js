@@ -166,3 +166,18 @@ And("User type any address in address field", () => {
 Then("User should be able to view google api adress suggestion", () => {
   cy.ValidateGoogleApiAddress();
 });
+
+//Test to  validate list of  countries in the address filed
+When("User to edit address", () => {
+  profileTab.getAddressEditIcon();
+});
+
+And("User to select  the country", () => {
+  cy.get("[data-testid=DropdownInput-country]").select("Germany");
+});
+Then("User should be able to view selected country", () => {
+  cy.get("[data-testid=DropdownInput-country]")
+    .select("Germany")
+    .find(":selected")
+    .contains("Germany");
+});

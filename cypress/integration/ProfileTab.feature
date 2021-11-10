@@ -62,6 +62,11 @@ Feature: Profile page feature
         And  User type any address in address field
         Then User should be able to view google api adress suggestion 
 
+        Scenario: Verify select country in the address
+        When User to edit address
+        And  User to select  the country
+        Then User should be able to view selected country 
+
 
 
 
