@@ -1,15 +1,15 @@
 
-<h1 align="center">Auotomation E-Commerce using Cypress  </h1>
+<h1 align="center">WunderFlats Automation Task </h1>
  <p align="center">
  <img height="50px" src="https://miro.medium.com/max/7200/1*Jkb_tsMBOvL6wQ8bzldu8Q.png" />
   <img height="50px" src="https://cdn.iconscout.com/icon/free/png-256/mocha-1-1175012.png" /> 
   <img height="50px" src="https://brandslogos.com/wp-content/uploads/thumbs/cucumber-logo-vector.svg" />
  </p>
 
-This is a task to Automate [http://automationpractice.com/index.php](http://automationpractice.com/index.php) website using Cypress and Cucumber with Mochawesome report, Please see below for the Test Case that are automated 
+This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen](https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen) website using Cypress and Cucumber with Mochawesome report, Please see below for the Test Case that are automated 
 
 
-<h1 align="center">Cypress Automation Demo  </h1>
+<h1 align="center">WunderFlats  Automation Demo  </h1>
 
 <p align="center"> 
   <kbd>
@@ -20,65 +20,106 @@ This is a task to Automate [http://automationpractice.com/index.php](http://auto
 </p>
 
 
-## Test Case:
-**Test Case 1 - Automate End to End Buy Order functionality.**  
 
-**Steps to Automate:**
 
-| Number | Test Case Steps |
+**General Test Cases for Profile Page**
+
+| Number | Test Case  |
 |--|--|
-|1  |   Open link [http://automationpractice.com/index.php](http://automationpractice.com/index.php) |
-|2|Login to the website.|
-|3  | Move your cursor over Women's link.|
-|4  | Click on sub menu 'T-shirts' |
-|5  |Mouse hover on the second product displayed|
-|6  | 'More' button will be displayed, click on 'More' button. |
-|7  | Make sure quantity is set to 1. |
-|8  |Select size 'L'|
-|9  | Select color |
-|10 |Click 'Add to Cart' button|
-|11 |Click 'Proceed to checkout' button.|
-|12 |Complete the buy order process till payment|
-|13 |Make sure that Product is ordered. |
+|1  | Verify profile URL [https://en-hiring.wunderflats.xyz/en/account/profile](https://en-hiring.wunderflats.xyz/en/account/profile) |
+|2|Verify profile page Url is accessible  in incognito window(Secuirty Check).|
+|3  | Verify all fileds  & Validtaions  in the German language |
+|4  | Verify bubble count in the  profile tab|
+|5  |Verify   profile page header tabs  |
+|6  |Verify   profile footer tabs  |
+|7  | Verify my account tabs (Profile,Documents,Settings) |
+|8  |Verify that Enter/Tab key works|
+|9  | Verify that entering blank spaces on mandatory fields|
+|10 |Verify proile progress ring |
 
 
-**Test Case 2 - Verify that 'Add to Wishlist' only works after login.**  
+**Full Name Test Cases.**  
 
 
-| Number | Test Case Steps |
+| Number | Test Case |
 |--|--|
-|1  |   Open link [http://automationpractice.com/index.php](http://automationpractice.com/index.php) |
-|2|Move your cursor over Women's link|
-|3  | Click on sub menu 'T-shirts|
-|4  | Mouse hover on the second product displayed |
-|5  | 'Add to Wishlist' will appear on the bottom of that product, click on it |
-|6  |  Verify that error message is displayed 'You must be logged in to manage your wishlist.'|
+|1  |  Verify  edit/update full name |
+|2  |Verify full name mandatory fileds|
+|3  | Verify full name validation with special characters|
 
-  
-**Test Case 3 - Verify that Total Price is reflecting correctly in 'Shopping Cart Summary' Page.**  
+**Email Test Cases.**  
 
-| Number | Test Case Steps |
+
+| Number | Test Case |
 |--|--|
-|1  |   Open link [http://automationpractice.com/index.php](http://automationpractice.com/index.php) |
-|2|Login to the website.|
-|3  | Move your cursor over Women's link.|
-|4  | Click on sub menu 'T-shirts' |
-|5  |Mouse hover on the second product displayed|
-|6  | 'More' button will be displayed, click on 'More' button. |
-|7  | Make sure quantity is set to 1. |
-|8 |Select size 'M'|
-|9 | Select color of your choice.|
-|10 | Click 'Add to Cart' button.|
-|11 | Click 'Proceed to checkout' button.|
-|13 | the price should match|
-|14 | Note - These are one of the few to be automated |
+|1  |  Verify  edit/update Email Address |
+|2  |Verify Email Address mandatory fileds| 
+|3  |Verify email  validation With special characters|
+|4  |Verify  already existing email validation |
+|5  |Verify change email and confirm your new address |
+
+**Phone Number Test Cases.**  
+
+
+| Number | Test Case |
+|--|--|
+|1  |  Verify  edit/update Phone Number |
+|2  |Verify Phone Number  mandatory fileds| 
+|3  |Verify  phone number country code matches with country flag |
+|4  |Verify  mobile number length |
+|5  |Vefiy  mobile number code matches  with selected country |
+|6  |Verify available list of countries for phone number|
+|7  |Verify passing alphanumeric data in phone number |
+
+**Address Test Cases.**  
+
+
+| Number | Test Case |
+|--|--|
+|1 |Verify  edit/update Address |
+|2 |Verify Address mandatory fileds| 
+|3 |Vefiy address suggestion  list from Google  |
+|4 |Verify list of countries for address  |
+
+
+**Identity verification Test Cases**  
+
+
+| Number | Test Case |
+|--|--|
+|1  |Verify  Identity verification card with description |
+|2  |Verify start verifcation button | 
+|3  |Verify verication conformation link by cell humber   |
+
+**Birth date Test Cases.**  
+
+
+| Number | Test Case |
+|--|--|
+|1  |  Verify  edit/update Birth date |
+|2  |Verify Birth date mandatory fileds| 
+|3  |Verify date of birth greater than current date |
+|4  |Verify all Zeros in the birth date |
+
+**Nationality date Test Cases.**  
+
+
+| Number | Test Case |
+|--|--|
+|1  |  Verify  edit/update nationality |
+|2  |Verify nationality  mandatory fileds| 
+|3  |Verify list of countries nationalites|
+|4  |Verify all Zeros in the birth date |
+
+
 
 ## Run Locally 🚀
 
-- git clone : git@github.com:AbdulWahab0/Cypress-E-Commerce-Website.git
-- cd Cypress-E-Commerce-Website
+- git clone : git@github.com:AbdulWahab0/Wunderflats-Automation-Task.git
+- cd Wunderflats-Automation-Task
 - npm install
 - npm start
+- Click on feature file  (ProfileTab.feature) to run the Automated test 
 
 Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gmail.com)
 
@@ -88,14 +129,6 @@ Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gm
  - Cucumber
  - Mochawesome
  - Jenkins
-
-
-
-## Sections 
-✔️ Automate End to End Buy Order functionality\
-✔️ Verify that 'Add to Wishlist' only works after login.\
-✔️ Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
-
 
 ## Concepts Implemented
 - End to End automation tetsing using cypress
@@ -115,55 +148,6 @@ Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gm
 ✔️ Cypress Command Line Test Results
 
 ## Test Results 
-✔️ Multiple Cucumber Html Reports
-
-<p align="center"> 
-  <kbd>
-  	<a href="#" target="_blank">
-		<img src="Cucumber_Report_Mutiple.png"></img>
-	</a>
-  </kbd>
-</p>
-
-✔️ Cypress Test Runner with Gherkin Syntax and Cucmber.Js
-
-<p align="center"> 
-  <kbd>
-  	<a href="#" target="_blank">
-		<img src="Cypress_Test_runner.png"></img>
-	</a>
-  </kbd>
-</p>
-
-✔️ Integrate the cypress with Jenkins build 
-
-<p align="center"> 
-  <kbd>
-  	<a href="#" target="_blank">
-		<img src="Jenkis-Deploy.png"></img>
-	</a>
-  </kbd>
-</p>
-
-✔️ Viewing TestComplete Test Results in Jenkins
-
-<p align="center"> 
-  <kbd>
-  	<a href="#" target="_blank">
-		<img src="Reports from Jenkin.png"></img>
-	</a>
-  </kbd>
-</p>
-
-✔️ Cypress Command Line Test Results
-
-<p align="center"> 
-  <kbd>
-  	<a href="#" target="_blank">
-		<img src="cli_results .png"></img>
-	</a>
-  </kbd>
-</p>
 
 
 
