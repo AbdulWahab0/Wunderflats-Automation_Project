@@ -4,29 +4,34 @@ const profileTab = new ProfileTab();
 
 //Commands for empty full name
 Cypress.Commands.add("removeFullName", () => {
-  cy.wait(1000);
+  cy.wait(2000);
   profileTab.getFirstNameEditIcon().click();
   profileTab.removeFirstNameForValidation().clear({ force: true });
 });
 
 Cypress.Commands.add("getFullNameSaveButton", () => {
+  cy.wait(2000);
   profileTab.getFullNameSaveButton().click({ force: true });
 });
 Cypress.Commands.add("getFullNameValidationtText", () => {
+  cy.wait(2000);
   profileTab.getFullNameValidationtText().should("have.text", "Please fill in");
 });
 
 //Test for profile progress ring
 Cypress.Commands.add("getNationalityEditIcon", () => {
   profileTab.getProfileTab().click();
+  cy.wait(2000);
   profileTab.getNationalityEditIcon().click();
 });
 Cypress.Commands.add("getStatusRingMouseover", () => {
+  cy.wait(2000);
   profileTab.getStatusRingMouseover();
 });
 Cypress.Commands.add("getStatusRing", () => {
   profileTab.getStatusRingToolTip();
     profileTab.getStatusRingToolTipHeading();
+    cy.wait(2000);
     profileTab.getStatusRingDescription();
     profileTab.getTextForProgressRing();
 });
@@ -34,9 +39,12 @@ Cypress.Commands.add("getStatusRing", () => {
 //Commands for addrees
 Cypress.Commands.add("removeAddress", () => {
   profileTab.getAddressEditIcon().click();
+  cy.wait(2000);
   profileTab.removeAddress().clear({ force: true });
   profileTab.removezipCode().clear({ force: true });
+  cy.wait(2000);
   profileTab.removeCity().clear({ force: true });
+  cy.wait(2000);
   profileTab.removeRegion().clear({ force: true });
 });
 Cypress.Commands.add("getAddressSaveButton", () => {
@@ -46,6 +54,7 @@ Cypress.Commands.add("getAddressLineValidationtText", () => {
   profileTab
     .getAddressLineValidationtText()
     .should("have.text", "Please fill in");
+    cy.wait(2000);
   profileTab.getZipCodeValidationtText().should("have.text", "Please fill in");
   profileTab
     .getAddressCityValidationtText()
@@ -61,6 +70,7 @@ Cypress.Commands.add("NaviagteToProfilePage", () => {
 });
 Cypress.Commands.add("NaviagteToAllFileds", () => {
   profileTab.getFullNameSection();
+  cy.wait(2000);
   profileTab.getEmailSection();
   profileTab.getPhoneNumberSection();
   profileTab.getAddressSection();
@@ -101,11 +111,13 @@ Cypress.Commands.add("ValidateAllTabs", () => {
 
 //Commands for Google address api addrees
 Cypress.Commands.add("removeExistingAddress", () => {
+  cy.wait(2000);
   profileTab.getAddressEditIcon().click();
 });
 
 Cypress.Commands.add("UpdateAddress", () => {
   profileTab.removeAddress().clear({ force: true });
+  cy.wait(2000);
   profileTab.updateAddressForGoogleApi();
 });
 

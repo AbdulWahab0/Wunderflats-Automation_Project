@@ -9,18 +9,20 @@ class LoginPage {
     return cy.get(".AppHeader-SignInLink");
   }
   getEmailButton() {
-    return cy.get(".InputWithButton-button"); 
+    return  cy.get('[data-testid=email-form] > .InputWithButton')
+    .find(".InputWithButton-button"); 
   }
   getEmailInput() {
-    return cy.get('.InputWithButton-inputContainer');
+    return cy.get('[data-testid=email-form] > .InputWithButton')
+    .find('.InputWithButton-inputContainer');
   }
   getPasswordlInput() {
-    return cy.get(
-      "[data-testid=password-form] > .InputWithButton > .InputWithButton-inputContainer > .InputWithButton-input"
-    );
+    return cy.get("[data-testid=password-form] > .InputWithButton")
+    .find('.InputWithButton-inputContainer');
   }
   getPasswordButton(){
-    return cy.get(".InputWithButton-btnLabel");
+    return cy.get("[data-testid=password-form] > .InputWithButton")
+    .find('.InputWithButton-button')
   }
   getMyAcoount() {
     return cy.get(":nth-child(1) > [data-testid=AppHeader-Link-account]");

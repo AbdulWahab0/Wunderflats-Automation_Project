@@ -1,0 +1,364 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 12,
+    "passes": 0,
+    "pending": 0,
+    "failures": 12,
+    "start": "2021-11-11T19:12:58.272Z",
+    "end": "2021-11-11T19:14:05.373Z",
+    "duration": 67101,
+    "testsRegistered": 12,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7dd45d8b-c549-43b7-93af-9402afc6df65",
+      "title": "",
+      "fullFile": "cypress/integration/ProfileTab.feature",
+      "file": "cypress/integration/ProfileTab.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "93981a7a-8160-4465-ab06-e5daff18171f",
+          "title": "Profile page feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User should be able to navigate profile page",
+              "fullTitle": "Profile page feature User should be able to navigate profile page",
+              "timedOut": null,
+              "duration": 14890,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "ReCaptchaValidationError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > \n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReCaptchaValidationError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > \n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at emailExists (https://en-hiring.wunderflats.xyz/public/spa.403342a472c80cfcbc21.js:2:83296)\n    at async onSubmit (https://en-hiring.wunderflats.xyz/public/AuthPage-AuthPage.bbc43f5a5b72abe7902c.js:2:5570)",
+                "diff": null
+              },
+              "uuid": "9eeaf163-d3bc-4f3f-ad5d-883bc444dac3",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view validation error if  the first name is null",
+              "fullTitle": "Profile page feature Verify the user is able to view validation error if  the first name is null",
+              "timedOut": null,
+              "duration": 6468,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=FullNameSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=FullNameSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.\n    at ProfileTab.getFirstNameEditIcon (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:274:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:31:14)",
+                "diff": null
+              },
+              "uuid": "c9335880-158f-4f18-ad23-ec47d0240118",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view validation error if  the email address is null",
+              "fullTitle": "Profile page feature Verify the user is able to view validation error if  the email address is null",
+              "timedOut": null,
+              "duration": 4335,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=EmailSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=EmailSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.\n    at ProfileTab.getEmailAddressEditIcon (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:280:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:69:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "5a4d699c-788d-4552-b19f-6e40cb3ad4c2",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view validation error if  the address is null",
+              "fullTitle": "Profile page feature Verify the user is able to view validation error if  the address is null",
+              "timedOut": null,
+              "duration": 4351,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=AddressSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=AddressSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.\n    at ProfileTab.getAddressEditIcon (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:357:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:65:14)",
+                "diff": null
+              },
+              "uuid": "c8eb735e-5378-4a67-862a-9eae5a8692b7",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view Identity verification description and Button",
+              "fullTitle": "Profile page feature Verify the user is able to view Identity verification description and Button",
+              "timedOut": null,
+              "duration": 4330,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=IdVerificationSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=IdVerificationSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.\n    at ProfileTab.getIdentityVerificationEditIcon (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:378:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:110:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "10a84ad2-dcc8-4712-a9e9-e4d110d09804",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view account Header tabs",
+              "fullTitle": "Profile page feature Verify the user is able to view account Header tabs",
+              "timedOut": null,
+              "duration": 4391,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.AccountHeader-tabs`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.AccountHeader-tabs`, but never found it.\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:125:33)",
+                "diff": null
+              },
+              "uuid": "f60d4b34-3770-4e8e-b79f-378c4d5530fb",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to list of countries for nationality",
+              "fullTitle": "Profile page feature Verify the user is able to list of countries for nationality",
+              "timedOut": null,
+              "duration": 4339,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=PillTab-Profile]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=PillTab-Profile]`, but never found it.\n    at ProfileTab.getProfileTab (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:404:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:130:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "01b783e7-3701-4e3a-aace-77668a9f64d9",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view profile progress ring",
+              "fullTitle": "Profile page feature Verify the user is able to view profile progress ring",
+              "timedOut": null,
+              "duration": 4329,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen' to include 'https://en-hiring.wunderflats.xyz/en/account/profile'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen' to include 'https://en-hiring.wunderflats.xyz/en/account/profile'\n    at ProfileTab.getProfilePage (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:220:23)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:141:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "b50fd63c-c062-4234-ad58-864968814f3a",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view profile page Header and Footer",
+              "fullTitle": "Profile page feature Verify the user is able to view profile page Header and Footer",
+              "timedOut": null,
+              "duration": 4341,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen' to include 'https://en-hiring.wunderflats.xyz/en/account/profile'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen' to include 'https://en-hiring.wunderflats.xyz/en/account/profile'\n    at ProfileTab.getProfilePage (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:220:23)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:141:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "24122839-4071-4572-ab70-51b8aaeb6ff0",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the user is able to view all fields  in the profile page",
+              "fullTitle": "Profile page feature Verify the user is able to view all fields  in the profile page",
+              "timedOut": null,
+              "duration": 4387,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen' to include 'https://en-hiring.wunderflats.xyz/en/account/profile'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen' to include 'https://en-hiring.wunderflats.xyz/en/account/profile'\n    at ProfileTab.getProfilePage (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:220:23)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:141:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "8bbe139b-e87b-458e-b0e8-6c9ba5e60dd4",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify address API implementation",
+              "fullTitle": "Profile page feature Verify address API implementation",
+              "timedOut": null,
+              "duration": 6386,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=AddressSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=AddressSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.\n    at ProfileTab.getAddressEditIcon (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:357:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\support\\index.js:143:14)",
+                "diff": null
+              },
+              "uuid": "b36faa28-4b67-4b62-8809-bf39daae2623",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify select country in the address",
+              "fullTitle": "Profile page feature Verify select country in the address",
+              "timedOut": null,
+              "duration": 4335,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=AddressSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-testid=AddressSection] > .EditableContentContainer-buttonContainer > [data-testid=EditableContentContainer-toggleButton]`, but never found it.\n    at ProfileTab.getAddressEditIcon (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:322:17)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:185:14)\n    at Context.resolveAndRunStepDefinition (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:11489:29)\n    at Context.eval (https://en-hiring.wunderflats.xyz/__cypress/tests?p=cypress\\integration\\ProfileTab.feature:10821:35)",
+                "diff": null
+              },
+              "uuid": "6a4956a4-f93d-49e7-a805-517e43a35e21",
+              "parentUUID": "93981a7a-8160-4465-ab06-e5daff18171f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9eeaf163-d3bc-4f3f-ad5d-883bc444dac3",
+            "c9335880-158f-4f18-ad23-ec47d0240118",
+            "5a4d699c-788d-4552-b19f-6e40cb3ad4c2",
+            "c8eb735e-5378-4a67-862a-9eae5a8692b7",
+            "10a84ad2-dcc8-4712-a9e9-e4d110d09804",
+            "f60d4b34-3770-4e8e-b79f-378c4d5530fb",
+            "01b783e7-3701-4e3a-aace-77668a9f64d9",
+            "b50fd63c-c062-4234-ad58-864968814f3a",
+            "24122839-4071-4572-ab70-51b8aaeb6ff0",
+            "8bbe139b-e87b-458e-b0e8-6c9ba5e60dd4",
+            "b36faa28-4b67-4b62-8809-bf39daae2623",
+            "6a4956a4-f93d-49e7-a805-517e43a35e21"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 66882,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "video": true,
+        "viewportWidth": 1000,
+        "viewportHeight": 860
+      },
+      "version": "5.2.0"
+    }
+  }
+}

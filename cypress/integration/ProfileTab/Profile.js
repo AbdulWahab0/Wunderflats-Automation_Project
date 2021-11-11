@@ -3,7 +3,7 @@ import ProfileTab from "../../support/pageObjects/ProfileTab";
 const profileTab = new ProfileTab();
 
 // Login to App
-Given("User should be logged in", (datatable) => {
+Given("User should be logged in", () => {
   cy.loginToApp();
 });
 

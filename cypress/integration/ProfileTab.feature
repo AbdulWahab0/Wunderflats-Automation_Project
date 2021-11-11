@@ -1,11 +1,9 @@
 Feature: Profile page feature
 
-
+    @profilePage
     Scenario: User should be able to navigate profile page
 
         Given User should be logged in
-            | email               | password    |
-            | wahab8567@gmail.com | 14FollowUp! |
         When User clicks on menu button
         And User clicks on my account option
         Then User should be redirected to profile page
