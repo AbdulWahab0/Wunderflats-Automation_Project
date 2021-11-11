@@ -32,7 +32,7 @@ This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=
 - Page object model is used in order to create object repository for storing web elements
 - For reports cucumber-html-reporter is used
 - Cypress parallel is implemented to execute test in parallel
-- cucumber-json-merge is used to consolidate test
+- Mochawesome-merge is used to consolidate test
 - Used chai-sorted assertion
 - Ingtegrate cypress project with Jenkins and cypress Dashboard 
 
