@@ -45,6 +45,12 @@ This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=
 -  ```Click on feature file  (ProfileTab.feature) to run the Automated test  ``` \
 - Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gmail.com)
 
+### Enter the following commands in terminal in order to check string is palidrome or not 
+
+- ``` cd Wunderflats-Automation_Project ```
+- ``` npm run testPalindrome ```
+
+
 ### Enter the following commands in terminal in order to  run the Cypress test Runner
 
 - ``` npx cypress open ```
@@ -121,6 +127,17 @@ failed test screenshot available at:/cypress/videos
   <kbd>
   	<a href="#" target="_blank">
 		<img src="cypress/Extra/Reults.PNG" width="1128"></img>
+	</a>
+  </kbd>
+</p>
+
+## Palidrome Test Results 
+✔️ Multiple Cucumber Html Reports
+
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="cypress/Extra/palidrome.PNG" width="1128"></img>
 	</a>
   </kbd>
 </p>
