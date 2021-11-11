@@ -28,26 +28,19 @@ This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=
 
 ### In order to get the code and install dependencies
 
-- ``` git clone http: ```
-- ``` cd secret-sauce-mtofgl ```
+- ``` git clone https://github.com/AbdulWahab0/Wunderflats-Automation_Project.git ```
+- ``` cd sWunderflats-Automation_Project ```
 - ``` npm install ```
--  ``` npm start ```
+-  ``` npm start ``` or Run: ```npx cypress open ```
 
-### Enter the following commands in terminal in order to execute test on chrome browser locally 
+### Enter the following commands in terminal in order to  run the Cypress test Runner
 
-- ``` npm run test:chromeTest ```
+- ``` npx cypress open ```
 
-### Enter the following command to visulaize test execution report
+### Enter the following commands in terminal in order to execute test on electron  in headless mode
 
-- ``` npm run TestExecutionreport ``` 
 
-### Enter the following commands in terminal in order to execute test on electron browser locally
-
-- ``` npm run test:electronTest ```
-
-### Enter the following command to visulaize test execution report
-
-- ``` npm run TestExecutionreport ``` 
+- ``` npm run electronTest ```
 
 ### Following is the report path
 
@@ -55,15 +48,15 @@ This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=
 
 ### Following is the Bug Report for Profile Page
 
-./reports/cucumber-htmlreport.html
+cypress/Bug_Report/Defect_report_WunderFlats.pdf
 
 ### Following is Test Plan Document 
 
-./reports/cucumber-htmlreport.html
+cypress/Bug_Report/Defect_report_WunderFlats.pdf
 
 ### Following is the Manual Test cases Excel file
 
-./reports/cucumber-htmlreport.html
+cypress/Manual_Test_Cases/Manual_Test_Case.xlsx
 
 ### Enter the following commands to run automated test inside docker container
 
