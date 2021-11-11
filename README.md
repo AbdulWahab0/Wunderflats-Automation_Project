@@ -9,16 +9,77 @@
 This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen](https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen) website using Cypress and Cucumber with Mochawesome report, Please see below for the Test Case that are automated 
 
 
-<h1 align="center">WunderFlats  Automation Demo  </h1>
+## Requirements
 
-<p align="center"> 
-  <kbd>
-  	<a href="#" target="_blank">
-		<img src="Project_Demo.gif" width="1128"></img>
-	</a>
-  </kbd>
-</p>
+- Any computer: Mac, Windows, Linux
+- Node 12.0.0+ (LTS)
+- git
 
+## About project
+
+- Cypress is used as Test automation framework 
+- Behavior Driven Development (BDD), Cucumber is implemented
+- Page object model is used in order to create object repository for storing web elements
+- For reports cucumber-html-reporter is used
+- Cypress parallel is implemented to execute test in parallel
+- cucumber-json-merge is used to consolidate test
+- Used chai-sorted assertion
+- Ingtegrate cypress project with Jenkins and cypress Dashboard 
+
+### In order to get the code and install dependencies
+
+- ``` git clone http: ```
+- ``` cd secret-sauce-mtofgl ```
+- ``` npm install ```
+-  ``` npm start ```
+
+### Enter the following commands in terminal in order to execute test on chrome browser locally 
+
+- ``` npm run test:chromeTest ```
+
+### Enter the following command to visulaize test execution report
+
+- ``` npm run TestExecutionreport ``` 
+
+### Enter the following commands in terminal in order to execute test on electron browser locally
+
+- ``` npm run test:electronTest ```
+
+### Enter the following command to visulaize test execution report
+
+- ``` npm run TestExecutionreport ``` 
+
+### Following is the report path
+
+./reports/cucumber-htmlreport.html
+
+### Following is the Bug Report for Profile Page
+
+./reports/cucumber-htmlreport.html
+
+### Following is Test Plan Document 
+
+./reports/cucumber-htmlreport.html
+
+### Following is the Manual Test cases Excel file
+
+./reports/cucumber-htmlreport.html
+
+### Enter the following commands to run automated test inside docker container
+
+- ``` docker run -it -v $PWD:/e2e -w /e2e --entrypoint=/bin/bash cypress/included:7.5.0 ```
+- ``` npm install -g cucumber-json-merge ``` 
+- ``` npm run test:chromeTest ```
+- ``` npm run TestExecutionreport ``` 
+
+### Electron test
+
+``` npm run test:electronTest ```
+``` npm run TestExecutionreport ``` 
+
+### Screenshots
+
+failed test screenshot available at: secret-sauce-mtofgl/cypress/screenshots/
 
 
 
