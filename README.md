@@ -8,6 +8,16 @@
 
 This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen](https://en-hiring.wunderflats.xyz/en/login?redirect=%2Fen) website using Cypress and Cucumber with Mochawesome report, Please see below for the Test Case that are automated 
 
+<h1 align="center">WunderFlats Profile Automation Demo  </h1>
+
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="cypress/Extra/ProfileTab.feature.gif" width="1128"></img>
+	</a>
+  </kbd>
+</p>
+
 
 ## Requirements
 
