@@ -26,61 +26,57 @@ This is a task to Automate [https://en-hiring.wunderflats.xyz/en/login?redirect=
 - Used chai-sorted assertion
 - Ingtegrate cypress project with Jenkins and cypress Dashboard 
 
-### In order to get the code and install dependencies
+### In order to get the code and install dependencies (Run Locally 🚀)
 
-- ``` git clone http: ```
-- ``` cd secret-sauce-mtofgl ```
+- ``` git clone https://github.com/AbdulWahab0/Wunderflats-Automation_Project.git ```
+- ``` cd Wunderflats-Automation_Project ```
 - ``` npm install ```
--  ``` npm start ```
+-  ``` npm start ``` or Run: ```npx cypress open ```
+-  ```Click on feature file  (ProfileTab.feature) to run the Automated test  ``` \
+- Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gmail.com)
 
-### Enter the following commands in terminal in order to execute test on chrome browser locally 
+### Enter the following commands in terminal in order to  run the Cypress test Runner
 
-- ``` npm run test:chromeTest ```
+- ``` npx cypress open ```
 
-### Enter the following command to visulaize test execution report
+### Enter the following commands in terminal in order to execute test on electron  in headless mode
 
-- ``` npm run TestExecutionreport ``` 
 
-### Enter the following commands in terminal in order to execute test on electron browser locally
-
-- ``` npm run test:electronTest ```
-
-### Enter the following command to visulaize test execution report
-
-- ``` npm run TestExecutionreport ``` 
+- ``` npm run electronTest ```
 
 ### Following is the report path
 
-./reports/cucumber-htmlreport.html
+reports/cucumber-htmlreport.html/index.html
 
 ### Following is the Bug Report for Profile Page
 
-./reports/cucumber-htmlreport.html
+cypress/Bug_Report/Defect_report_WunderFlats.pdf
 
 ### Following is Test Plan Document 
 
-./reports/cucumber-htmlreport.html
+cypress/Test_Strategy/Test_Strategy.pdf
 
 ### Following is the Manual Test cases Excel file
 
-./reports/cucumber-htmlreport.html
+cypress/Manual_Test_Cases/Manual_Test_Case.xlsx
 
-### Enter the following commands to run automated test inside docker container
+### Autmated test case Demo Vidoes
 
-- ``` docker run -it -v $PWD:/e2e -w /e2e --entrypoint=/bin/bash cypress/included:7.5.0 ```
-- ``` npm install -g cucumber-json-merge ``` 
-- ``` npm run test:chromeTest ```
-- ``` npm run TestExecutionreport ``` 
+failed test screenshot available at:/cypress/videos
 
-### Electron test
+## Technology used:
 
-``` npm run test:electronTest ```
-``` npm run TestExecutionreport ``` 
+ - Cypress 
+ - Cucumber
+ - Mochawesome
+ - Jenkins
 
-### Screenshots
-
-failed test screenshot available at: secret-sauce-mtofgl/cypress/screenshots/
-
+## Sections 
+✔️ Multiple Cucumber Html Reports\
+✔️ Cypress Test Runner with Gherkin Syntax and Cucmber.Js\
+✔️ Integrate the cypress with Jenkins build \
+✔️ Viewing TestComplete Test Results in Jenkins\
+✔️ Cypress Command Line Test Results
 
 
 **General Test Cases for Profile Page**
@@ -171,44 +167,6 @@ failed test screenshot available at: secret-sauce-mtofgl/cypress/screenshots/
 |2  |Verify nationality  mandatory fileds| 
 |3  |Verify list of countries nationalites|
 |4  |Verify all Zeros in the birth date |
-
-
-
-## Run Locally 🚀
-
-- git clone : git@github.com:AbdulWahab0/Wunderflats-Automation-Task.git
-- cd Wunderflats-Automation-Task
-- npm install
-- npm start
-- Click on feature file  (ProfileTab.feature) to run the Automated test 
-
-Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gmail.com)
-
-## Technology used:
-
- - Cypress 
- - Cucumber
- - Mochawesome
- - Jenkins
-
-## Concepts Implemented
-- End to End automation tetsing using cypress
-- Page Object Model 
-- Behavior Driven Development
-- Cucmber.js Framework 
--  Mochawesome report
-- Development:  Github,
-- Cypress-cucumber-preprocesso
-
-
-## Sections 
-✔️ Multiple Cucumber Html Reports\
-✔️ Cypress Test Runner with Gherkin Syntax and Cucmber.Js\
-✔️ Integrate the cypress with Jenkins build \
-✔️ Viewing TestComplete Test Results in Jenkins\
-✔️ Cypress Command Line Test Results
-
-## Test Results 
 
 
 
