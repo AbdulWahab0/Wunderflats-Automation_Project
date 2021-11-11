@@ -80,14 +80,39 @@ failed test screenshot available at:/cypress/videos
  - Cucumber
  - Mochawesome
  - Jenkins
+ 
+## Cypress Test Automation  Results 
 
-## Sections 
-✔️ Multiple Cucumber Html Reports\
-✔️ Cypress Test Runner with Gherkin Syntax and Cucmber.Js\
-✔️ Integrate the cypress with Jenkins build \
-✔️ Viewing TestComplete Test Results in Jenkins\
-✔️ Cypress Command Line Test Results
 
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="cypress/Extra/Automation results.PNG" width="1128"></img>
+	</a>
+  </kbd>
+</p>
+
+## Cypress Test on Cypress Dashboard
+
+
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="cypress/Extra/cypress_Dashboard.png" width="1128"></img>
+	</a>
+  </kbd>
+</p>
+
+## Cypress Project Integerate with jenkin
+
+
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="cypress/Extra/jenkins.png" width="1128"></img>
+	</a>
+  </kbd>
+</p>
 
 ## Test Results 
 ✔️ Multiple Cucumber Html Reports
@@ -95,7 +120,7 @@ failed test screenshot available at:/cypress/videos
 <p align="center"> 
   <kbd>
   	<a href="#" target="_blank">
-		<img src="Cucumber_Report_Mutiple.png"></img>
+		<img src="cypress/Extra/Reults.PNG" width="1128"></img>
 	</a>
   </kbd>
 </p>
