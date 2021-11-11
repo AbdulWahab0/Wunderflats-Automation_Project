@@ -89,6 +89,18 @@ failed test screenshot available at:/cypress/videos
 ✔️ Cypress Command Line Test Results
 
 
+## Test Results 
+✔️ Multiple Cucumber Html Reports
+
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="Cucumber_Report_Mutiple.png"></img>
+	</a>
+  </kbd>
+</p>
+
+
 **General Test Cases for Profile Page**
 
 | Number | Test Case  |
